@@ -60,16 +60,56 @@
 		FAE65A4329A7A61500CA5BAA /* SwiftArquiteturas */ = {
 			isa = PBXGroup;
 			children = (
+				FAE65A6329A7AF3A00CA5BAA /* Source */,
+				FAE65A5D29A7AEE600CA5BAA /* API */,
+				FAE65A5229A7A61600CA5BAA /* Info.plist */,
+				FAE65A5829A7A6CB00CA5BAA /* GoogleService-Info.plist */,
+			);
+			path = SwiftArquiteturas;
+			sourceTree = "<group>";
+		};
+		FAE65A5D29A7AEE600CA5BAA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAE65A6229A7AF1500CA5BAA /* Provider */,
+				FAE65A6129A7AF0700CA5BAA /* Manager */,
+				FAE65A5E29A7AEF100CA5BAA /* Business */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAE65A5E29A7AEF100CA5BAA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		FAE65A6129A7AF0700CA5BAA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FAE65A6229A7AF1500CA5BAA /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		FAE65A6329A7AF3A00CA5BAA /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */,
 				FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */,
 				FAE65A4829A7A61500CA5BAA /* ViewController.swift */,
 				FAE65A4A29A7A61500CA5BAA /* Main.storyboard */,
 				FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */,
 				FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */,
-				FAE65A5229A7A61600CA5BAA /* Info.plist */,
-				FAE65A5829A7A6CB00CA5BAA /* GoogleService-Info.plist */,
 			);
-			path = SwiftArquiteturas;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
