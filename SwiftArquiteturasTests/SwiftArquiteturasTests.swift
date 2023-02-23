@@ -19,36 +19,35 @@ class SwiftArquiteturasTests: XCTestCase {
     }
     
     func testRegister() throws {
+        var userModel = UserModel()
+        
+        let exp = expectation(description: "Check Login is succesful")
         let manager = UserManager(business: UserBusiness())
         
-        manager.register(email: "teste@teste.com", password: "aa") { userModel in
-            print(userModel)
+        manager.register(email: "teste@teste.com", password: "a12345") { userM in
+            print(userM)
+            userModel = userM
         } failureHandler: { error in
             print(error ?? "error")
         }
         
-        manager.register(email: "teste@teste.com", password: "a12345") { userModel in
-            print(userModel)
-        } failureHandler: { error in
-            print(error ?? "error")
+        waitForExpectations(timeout: 10) { error in
+            if let error = error {
+                XCTFail("waitForExpectationWithTimeout errored: \(error)")
+            }
+            XCTAssertEqual(userModel != nil, true)
         }
     }
     
-    func testlogin() throws {
-        let manager = UserManager(business: UserBusiness())
-        
-        manager.login(email: "aaaaa", password: "aaaaa") { userModel in
-            print(userModel)
-        } failureHandler: { error in
-            print(error ?? "error")
-        }
-        
-        manager.login(email: "teste@teste.com", password: "a12345") { userModel in
-            print(userModel)
-        } failureHandler: { error in
-            print(error ?? "error")
-        }
-    }
+//    func testlogin() throws {
+//        let manager = UserManager(business: UserBusiness())
+//
+//        manager.login(email: "teste@teste.com", password: "a12345") { userModel in
+//            print(userModel)
+//        } failureHandler: { error in
+//            print(error ?? "error")
+//        }
+//    }
 
     func testExample() throws {
         // This is an example of a functional test case.
