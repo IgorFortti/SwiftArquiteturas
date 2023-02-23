@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2829A7D2430080C863 /* UserBusiness.swift */; };
+		FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2A29A7D7BE0080C863 /* UserManager.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
 		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		FA953E2829A7D2430080C863 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
+		FA953E2A29A7D7BE0080C863 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		FAE65A6129A7AF0700CA5BAA /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				FA953E2A29A7D7BE0080C863 /* UserManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				FAE65A6829A7B19D00CA5BAA /* UserModel.swift in Sources */,
 				FAE65A6529A7B0D500CA5BAA /* UserProvider.swift in Sources */,
 				FAE65A6B29A7B64200CA5BAA /* Constants.swift in Sources */,
+				FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */,
 				FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
