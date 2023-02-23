@@ -20,7 +20,7 @@ protocol UserManagerProtocol {
 
 class UserManager: UserManagerProtocol {
     let business: UserBusinessProtocol
-
+// Método que inicializará a classe UserManeger quando for instanciada.
     init(business: UserBusinessProtocol) {
         self.business = business
     }
