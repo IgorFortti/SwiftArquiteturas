@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4521D929A900B800C5CAC6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521D829A900B800C5CAC6 /* LoginViewController.swift */; };
+		FA4521DB29A900C800C5CAC6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */; };
 		FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2829A7D2430080C863 /* UserBusiness.swift */; };
 		FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2A29A7D7BE0080C863 /* UserManager.swift */; };
 		FA953E3329A7E4780080C863 /* SwiftArquiteturasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3229A7E4780080C863 /* SwiftArquiteturasTests.swift */; };
@@ -14,7 +16,7 @@
 		FA953E4229A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E4129A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
-		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
+		FAE65A4929A7A61500CA5BAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* HomeViewController.swift */; };
 		FAE65A4C29A7A61500CA5BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4A29A7A61500CA5BAA /* Main.storyboard */; };
 		FAE65A4E29A7A61600CA5BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */; };
 		FAE65A5129A7A61600CA5BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA4521D829A900B800C5CAC6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FA953E2829A7D2430080C863 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		FA953E2A29A7D7BE0080C863 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FA953E3029A7E4780080C863 /* SwiftArquiteturasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArquiteturasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +57,7 @@
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAE65A4829A7A61500CA5BAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAE65A4829A7A61500CA5BAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAE65A4B29A7A61500CA5BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE65A5029A7A61600CA5BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA4521D729A900A200C5CAC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE65A4829A7A61500CA5BAA /* HomeViewController.swift */,
+				FA4521D829A900B800C5CAC6 /* LoginViewController.swift */,
+				FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FA953E3129A7E4780080C863 /* SwiftArquiteturasTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +144,7 @@
 		FAE65A4329A7A61500CA5BAA /* SwiftArquiteturas */ = {
 			isa = PBXGroup;
 			children = (
+				FA4521D729A900A200C5CAC6 /* Controller */,
 				FAE65A6929A7B61E00CA5BAA /* Infrastructure */,
 				FAE65A6329A7AF3A00CA5BAA /* Source */,
 				FAE65A5D29A7AEE600CA5BAA /* API */,
@@ -179,7 +194,6 @@
 			children = (
 				FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */,
 				FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */,
-				FAE65A4829A7A61500CA5BAA /* ViewController.swift */,
 				FAE65A4A29A7A61500CA5BAA /* Main.storyboard */,
 				FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */,
 				FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */,
@@ -358,7 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */,
+				FA4521D929A900B800C5CAC6 /* LoginViewController.swift in Sources */,
+				FA4521DB29A900C800C5CAC6 /* RegisterViewController.swift in Sources */,
+				FAE65A4929A7A61500CA5BAA /* HomeViewController.swift in Sources */,
 				FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */,
 				FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */,
 				FAE65A6829A7B19D00CA5BAA /* UserModel.swift in Sources */,
