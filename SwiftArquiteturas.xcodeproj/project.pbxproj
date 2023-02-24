@@ -12,10 +12,13 @@
 		FA953E3329A7E4780080C863 /* SwiftArquiteturasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3229A7E4780080C863 /* SwiftArquiteturasTests.swift */; };
 		FA953E4029A7E48D0080C863 /* SwiftArquiteturasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3F29A7E48D0080C863 /* SwiftArquiteturasUITests.swift */; };
 		FA953E4229A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E4129A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift */; };
+		FABE9E0229A92D3600765466 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E0129A92D3600765466 /* Coordinator.swift */; };
+		FABE9E0429A92F7000765466 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E0329A92F7000765466 /* LoginCoordinator.swift */; };
+		FABE9E0629A9306D00765466 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E0529A9306D00765466 /* UIColor+.swift */; };
+		FABE9E0A29A9326B00765466 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E0929A9326B00765466 /* LoginViewController.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
 		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
-		FAE65A4C29A7A61500CA5BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4A29A7A61500CA5BAA /* Main.storyboard */; };
 		FAE65A4E29A7A61600CA5BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */; };
 		FAE65A5129A7A61600CA5BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */; };
 		FAE65A5929A7A6CB00CA5BAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE65A5829A7A6CB00CA5BAA /* GoogleService-Info.plist */; };
@@ -50,11 +53,14 @@
 		FA953E3D29A7E48D0080C863 /* SwiftArquiteturasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArquiteturasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA953E3F29A7E48D0080C863 /* SwiftArquiteturasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftArquiteturasUITests.swift; sourceTree = "<group>"; };
 		FA953E4129A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftArquiteturasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FABE9E0129A92D3600765466 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FABE9E0329A92F7000765466 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		FABE9E0529A9306D00765466 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		FABE9E0929A9326B00765466 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4829A7A61500CA5BAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAE65A4B29A7A61500CA5BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE65A5029A7A61600CA5BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE65A5229A7A61600CA5BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,10 +113,36 @@
 			path = SwiftArquiteturasUITests;
 			sourceTree = "<group>";
 		};
+		FABE9E0029A92C9900765466 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FABE9E0129A92D3600765466 /* Coordinator.swift */,
+				FABE9E0329A92F7000765466 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FABE9E0729A9324500765466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FABE9E0829A9325300765466 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FABE9E0829A9325300765466 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FABE9E0929A9326B00765466 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		FAE65A3829A7A61500CA5BAA = {
 			isa = PBXGroup;
 			children = (
 				FAE65A4329A7A61500CA5BAA /* SwiftArquiteturas */,
+				FAE65A6929A7B61E00CA5BAA /* Infrastructure */,
 				FA953E3129A7E4780080C863 /* SwiftArquiteturasTests */,
 				FA953E3E29A7E48D0080C863 /* SwiftArquiteturasUITests */,
 				FAE65A4229A7A61500CA5BAA /* Products */,
@@ -130,9 +162,10 @@
 		FAE65A4329A7A61500CA5BAA /* SwiftArquiteturas */ = {
 			isa = PBXGroup;
 			children = (
-				FAE65A6929A7B61E00CA5BAA /* Infrastructure */,
+				FABE9E0729A9324500765466 /* Controllers */,
 				FAE65A6329A7AF3A00CA5BAA /* Source */,
 				FAE65A5D29A7AEE600CA5BAA /* API */,
+				FABE9E0029A92C9900765466 /* Coordinator */,
 				FAE65A5229A7A61600CA5BAA /* Info.plist */,
 				FAE65A5829A7A6CB00CA5BAA /* GoogleService-Info.plist */,
 			);
@@ -180,7 +213,6 @@
 				FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */,
 				FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */,
 				FAE65A4829A7A61500CA5BAA /* ViewController.swift */,
-				FAE65A4A29A7A61500CA5BAA /* Main.storyboard */,
 				FAE65A4D29A7A61600CA5BAA /* Assets.xcassets */,
 				FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */,
 			);
@@ -199,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE65A6A29A7B64200CA5BAA /* Constants.swift */,
+				FABE9E0529A9306D00765466 /* UIColor+.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -330,7 +363,6 @@
 				FAE65A5129A7A61600CA5BAA /* LaunchScreen.storyboard in Resources */,
 				FAE65A5929A7A6CB00CA5BAA /* GoogleService-Info.plist in Resources */,
 				FAE65A4E29A7A61600CA5BAA /* Assets.xcassets in Resources */,
-				FAE65A4C29A7A61500CA5BAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,14 +390,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABE9E0A29A9326B00765466 /* LoginViewController.swift in Sources */,
 				FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */,
 				FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */,
+				FABE9E0429A92F7000765466 /* LoginCoordinator.swift in Sources */,
 				FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */,
+				FABE9E0629A9306D00765466 /* UIColor+.swift in Sources */,
 				FAE65A6829A7B19D00CA5BAA /* UserModel.swift in Sources */,
 				FAE65A6529A7B0D500CA5BAA /* UserProvider.swift in Sources */,
 				FAE65A6B29A7B64200CA5BAA /* Constants.swift in Sources */,
 				FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */,
 				FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */,
+				FABE9E0229A92D3600765466 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAE65A4A29A7A61500CA5BAA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAE65A4B29A7A61500CA5BAA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAE65A4F29A7A61600CA5BAA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -602,7 +630,6 @@
 				INFOPLIST_FILE = SwiftArquiteturas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,7 +657,6 @@
 				INFOPLIST_FILE = SwiftArquiteturas/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
