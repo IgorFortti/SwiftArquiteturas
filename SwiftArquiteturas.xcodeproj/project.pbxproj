@@ -10,6 +10,7 @@
 		FA4521D929A900B800C5CAC6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521D829A900B800C5CAC6 /* LoginViewController.swift */; };
 		FA4521DB29A900C800C5CAC6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */; };
 		FA4521DE29A9062700C5CAC6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521DD29A9062700C5CAC6 /* LoginPresenter.swift */; };
+		FA4521E029A91A6300C5CAC6 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4521DF29A91A6300C5CAC6 /* RegisterPresenter.swift */; };
 		FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2829A7D2430080C863 /* UserBusiness.swift */; };
 		FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E2A29A7D7BE0080C863 /* UserManager.swift */; };
 		FA953E3329A7E4780080C863 /* SwiftArquiteturasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3229A7E4780080C863 /* SwiftArquiteturasTests.swift */; };
@@ -49,6 +50,7 @@
 		FA4521D829A900B800C5CAC6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FA4521DD29A9062700C5CAC6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FA4521DF29A91A6300C5CAC6 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		FA953E2829A7D2430080C863 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		FA953E2A29A7D7BE0080C863 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		FA953E3029A7E4780080C863 /* SwiftArquiteturasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArquiteturasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4521DA29A900C800C5CAC6 /* RegisterViewController.swift */,
+				FA4521DF29A91A6300C5CAC6 /* RegisterPresenter.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4521D929A900B800C5CAC6 /* LoginViewController.swift in Sources */,
+				FA4521E029A91A6300C5CAC6 /* RegisterPresenter.swift in Sources */,
 				FA4521DB29A900C800C5CAC6 /* RegisterViewController.swift in Sources */,
 				FAE65A4929A7A61500CA5BAA /* HomeViewController.swift in Sources */,
 				FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */,
