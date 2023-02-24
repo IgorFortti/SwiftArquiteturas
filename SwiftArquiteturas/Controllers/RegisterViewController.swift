@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  SwiftArquiteturas
 //
 //  Created by Igor Fortti on 24/02/23.
@@ -7,34 +7,39 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class RegisterViewController: UIViewController {
+    
     @IBOutlet weak var emailTextField: UITextField!
+    
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func openButtonTap(_ sender: Any) {
-        let manager = UserManager(business: UserBusiness())
-        
+    @IBAction func registerButtonTap(_ sender: Any) {
         if let email = emailTextField.text,
-           let password = passwordTextField.text {
-            
-            manager.login(email: email, password: password) { userModel in
+           let password = passwordTextField.text,
+           let confirmPassword = confirmPasswordTextField.text {
+            if password != confirmPassword {
+                self.showMessage(title: "Erro", message: "Senhas diferentes")
+                return
+            }
+            let manager = UserManager(business: UserBusiness())
+            manager.register(email: email, password: password) { userModel in
                 self.openHomeView()
             } failureHandler: { error in
                 self.showMessage(title: "Erro", message: error?.localizedDescription ?? "")
             }
+            
         }
     }
     
-    @IBAction func registerButtonTap(_ sender: Any) {
-        let registerVC = self.storyboard?.instantiateViewController(withIdentifier: "registerViewController") as? RegisterViewController
-        registerVC?.modalPresentationStyle = .fullScreen
-        self.present(registerVC ?? UIViewController(), animated: true)
+    @IBAction func openButtonTap(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     func showMessage(title: String, message: String) {
@@ -48,6 +53,7 @@ class LoginViewController: UIViewController {
         homeVC?.modalPresentationStyle = .fullScreen
         self.present(homeVC ?? UIViewController(), animated: true)
     }
+    
     
 
 

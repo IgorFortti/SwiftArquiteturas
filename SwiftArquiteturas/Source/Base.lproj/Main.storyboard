@@ -114,7 +114,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="828" y="72"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="dTO-s5-1qB">
             <objects>
-                <viewController id="Met-df-pUT" customClass="HomeViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registerViewController" id="Met-df-pUT" customClass="RegisterViewController" customModule="SwiftArquiteturas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ab-c1-3HY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,6 +186,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" red="0.0" green="0.70596736670000004" blue="0.77429783340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerButtonTap:" destination="Met-df-pUT" eventType="touchUpInside" id="Vow-Hf-iZZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-c8-PcL">
                                 <rect key="frame" x="40" y="509" width="295" height="40"/>
@@ -205,6 +208,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" red="0.0" green="0.70596736670000004" blue="0.77429783340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="openButtonTap:" destination="Met-df-pUT" eventType="touchUpInside" id="pQc-Jt-HgO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D5U-BX-rTr">
                                 <rect key="frame" x="40" y="145" width="295" height="34"/>
@@ -244,6 +250,11 @@
                             <constraint firstItem="BJB-Ij-RIK" firstAttribute="trailing" secondItem="D5U-BX-rTr" secondAttribute="trailing" constant="40" id="yJb-CF-95N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="m8h-K7-W0h" id="dTo-8E-dWQ"/>
+                        <outlet property="emailTextField" destination="D5U-BX-rTr" id="sXE-OD-XxA"/>
+                        <outlet property="passwordTextField" destination="fue-Ge-FaX" id="wir-fc-pg8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9c-je-TaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
