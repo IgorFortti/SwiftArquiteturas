@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let viewController = HomeViewController()
+        let viewController = LoginViewController()
         let navigation = UINavigationController(rootViewController: viewController)
         navigation.navigationBar.prefersLargeTitles = true
         navigation.navigationBar.backgroundColor = .systemMint

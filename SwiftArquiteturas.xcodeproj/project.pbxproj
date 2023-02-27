@@ -19,6 +19,21 @@
 		FA953E3329A7E4780080C863 /* SwiftArquiteturasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3229A7E4780080C863 /* SwiftArquiteturasTests.swift */; };
 		FA953E4029A7E48D0080C863 /* SwiftArquiteturasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E3F29A7E48D0080C863 /* SwiftArquiteturasUITests.swift */; };
 		FA953E4229A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA953E4129A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift */; };
+		FABED34C29AD139D002C0902 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34629AD139D002C0902 /* RegisterPresenter.swift */; };
+		FABED34D29AD139D002C0902 /* RegisterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34729AD139D002C0902 /* RegisterWorker.swift */; };
+		FABED34E29AD139D002C0902 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34829AD139D002C0902 /* RegisterRouter.swift */; };
+		FABED34F29AD139D002C0902 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34929AD139D002C0902 /* RegisterModels.swift */; };
+		FABED35029AD139D002C0902 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34A29AD139D002C0902 /* RegisterViewController.swift */; };
+		FABED35129AD139D002C0902 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED34B29AD139D002C0902 /* RegisterInteractor.swift */; };
+		FABED35829AD13AD002C0902 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35229AD13AD002C0902 /* LoginPresenter.swift */; };
+		FABED35929AD13AD002C0902 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35329AD13AD002C0902 /* LoginWorker.swift */; };
+		FABED35A29AD13AD002C0902 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35429AD13AD002C0902 /* LoginRouter.swift */; };
+		FABED35B29AD13AD002C0902 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35529AD13AD002C0902 /* LoginModels.swift */; };
+		FABED35C29AD13AD002C0902 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35629AD13AD002C0902 /* LoginViewController.swift */; };
+		FABED35D29AD13AD002C0902 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35729AD13AD002C0902 /* LoginInteractor.swift */; };
+		FABED35F29AD13C3002C0902 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED35E29AD13C3002C0902 /* LoginView.swift */; };
+		FABED36129AD1436002C0902 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED36029AD1436002C0902 /* RegisterView.swift */; };
+		FABED36329AD1534002C0902 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABED36229AD1534002C0902 /* UITextField+.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
 		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
@@ -64,6 +79,21 @@
 		FA953E3D29A7E48D0080C863 /* SwiftArquiteturasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftArquiteturasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA953E3F29A7E48D0080C863 /* SwiftArquiteturasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftArquiteturasUITests.swift; sourceTree = "<group>"; };
 		FA953E4129A7E48D0080C863 /* SwiftArquiteturasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftArquiteturasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FABED34629AD139D002C0902 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		FABED34729AD139D002C0902 /* RegisterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWorker.swift; sourceTree = "<group>"; };
+		FABED34829AD139D002C0902 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		FABED34929AD139D002C0902 /* RegisterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
+		FABED34A29AD139D002C0902 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FABED34B29AD139D002C0902 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		FABED35229AD13AD002C0902 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FABED35329AD13AD002C0902 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		FABED35429AD13AD002C0902 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		FABED35529AD13AD002C0902 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		FABED35629AD13AD002C0902 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FABED35729AD13AD002C0902 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		FABED35E29AD13C3002C0902 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FABED36029AD1436002C0902 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FABED36229AD1534002C0902 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +147,13 @@
 		FA67E91C29ACF9E800A5AE3E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				FABED35229AD13AD002C0902 /* LoginPresenter.swift */,
+				FABED35329AD13AD002C0902 /* LoginWorker.swift */,
+				FABED35429AD13AD002C0902 /* LoginRouter.swift */,
+				FABED35529AD13AD002C0902 /* LoginModels.swift */,
+				FABED35629AD13AD002C0902 /* LoginViewController.swift */,
+				FABED35729AD13AD002C0902 /* LoginInteractor.swift */,
+				FABED35E29AD13C3002C0902 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -124,6 +161,13 @@
 		FA67E91D29ACF9F100A5AE3E /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FABED34629AD139D002C0902 /* RegisterPresenter.swift */,
+				FABED34729AD139D002C0902 /* RegisterWorker.swift */,
+				FABED34829AD139D002C0902 /* RegisterRouter.swift */,
+				FABED34929AD139D002C0902 /* RegisterModels.swift */,
+				FABED34A29AD139D002C0902 /* RegisterViewController.swift */,
+				FABED34B29AD139D002C0902 /* RegisterInteractor.swift */,
+				FABED36029AD1436002C0902 /* RegisterView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -252,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE65A6A29A7B64200CA5BAA /* Constants.swift */,
+				FABED36229AD1534002C0902 /* UITextField+.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -411,21 +456,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABED35929AD13AD002C0902 /* LoginWorker.swift in Sources */,
 				FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */,
 				FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */,
 				FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */,
 				FA67E92C29ACFD2200A5AE3E /* HomeView.swift in Sources */,
+				FABED35829AD13AD002C0902 /* LoginPresenter.swift in Sources */,
 				FAE65A6829A7B19D00CA5BAA /* UserModel.swift in Sources */,
+				FABED34F29AD139D002C0902 /* RegisterModels.swift in Sources */,
+				FABED36129AD1436002C0902 /* RegisterView.swift in Sources */,
+				FABED34E29AD139D002C0902 /* RegisterRouter.swift in Sources */,
+				FABED35F29AD13C3002C0902 /* LoginView.swift in Sources */,
 				FA67E92829ACFB9400A5AE3E /* HomeModels.swift in Sources */,
 				FAE65A6529A7B0D500CA5BAA /* UserProvider.swift in Sources */,
+				FABED35B29AD13AD002C0902 /* LoginModels.swift in Sources */,
 				FAE65A6B29A7B64200CA5BAA /* Constants.swift in Sources */,
 				FA67E92529ACFB9400A5AE3E /* HomePresenter.swift in Sources */,
+				FABED35029AD139D002C0902 /* RegisterViewController.swift in Sources */,
+				FABED35A29AD13AD002C0902 /* LoginRouter.swift in Sources */,
 				FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */,
+				FABED35D29AD13AD002C0902 /* LoginInteractor.swift in Sources */,
+				FABED34D29AD139D002C0902 /* RegisterWorker.swift in Sources */,
+				FABED36329AD1534002C0902 /* UITextField+.swift in Sources */,
 				FA67E92629ACFB9400A5AE3E /* HomeWorker.swift in Sources */,
+				FABED35129AD139D002C0902 /* RegisterInteractor.swift in Sources */,
 				FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */,
 				FA67E92929ACFB9400A5AE3E /* HomeViewController.swift in Sources */,
 				FA67E92729ACFB9400A5AE3E /* HomeRouter.swift in Sources */,
 				FA67E92A29ACFB9400A5AE3E /* HomeInteractor.swift in Sources */,
+				FABED35C29AD13AD002C0902 /* LoginViewController.swift in Sources */,
+				FABED34C29AD139D002C0902 /* RegisterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

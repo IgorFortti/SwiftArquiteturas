@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  LoginViewController.swift
 //  SwiftArquiteturas
 //
 //  Created by Igor Fortti on 27/02/23.
@@ -12,15 +12,15 @@
 
 import UIKit
 
-protocol HomeDisplayLogic: AnyObject
+protocol LoginDisplayLogic: AnyObject
 {
-    func displaySomething(viewModel: Home.Something.ViewModel)
+    func displaySomething(viewModel: Login.Something.ViewModel)
 }
 
-class HomeViewController: UIViewController, HomeDisplayLogic
+class LoginViewController: UIViewController, LoginDisplayLogic
 {
-    var interactor: HomeBusinessLogic?
-    var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
+    var interactor: LoginBusinessLogic?
+    var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
     
     // MARK: Object lifecycle
     
@@ -41,9 +41,9 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     private func setup()
     {
         let viewController = self
-        let interactor = HomeInteractor()
-        let presenter = HomePresenter()
-        let router = HomeRouter()
+        let interactor = LoginInteractor()
+        let presenter = LoginPresenter()
+        let router = LoginRouter()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
@@ -65,9 +65,9 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     }
     
     // MARK: View lifecycle
-    
     override func loadView() {
-        self.view = homeView
+        self.view = loginView
+        title = "Entrada"
     }
     
     override func viewDidLoad()
@@ -77,19 +77,19 @@ class HomeViewController: UIViewController, HomeDisplayLogic
     }
     
     // MARK: Do something
-    lazy var homeView: HomeView = {
-        let view = HomeView(frame: .zero)
+    lazy var loginView: LoginView = {
+        let view = LoginView(frame: .zero)
         return view
     }()
     //@IBOutlet weak var nameTextField: UITextField!
     
     func doSomething()
     {
-        let request = Home.Something.Request()
+        let request = Login.Something.Request()
         interactor?.doSomething(request: request)
     }
     
-    func displaySomething(viewModel: Home.Something.ViewModel)
+    func displaySomething(viewModel: Login.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
     }
