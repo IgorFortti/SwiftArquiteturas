@@ -33,9 +33,17 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore
   func doSomething(request: Login.Something.Request)
   {
     worker = LoginWorker()
-    worker?.doSomeWork()
-    
-    let response = Login.Something.Response()
-    presenter?.presentSomething(response: response)
+      worker?.loginUser(userModel: request.userModel, successHandler: {[weak self] userModel in
+          if let self = self {
+              let response = Login.Something.Response(userModel: userModel ?? UserModel())
+              self.presenter?.presentSomething(response: response)
+          }
+      }, failureHandler: {[weak self] error in
+          if let self = self,
+             let error = error {
+              let viewError = Login.Something.ViewError(error: error)
+              self.presenter?.presentError(error: viewError)
+          }
+      })
   }
 }

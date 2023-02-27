@@ -11,7 +11,7 @@ class LoginView: UIView {
     
     //MARK: - Clousures
     var onRegisterTap: (() -> Void)?
-    var onLoginTap: ((_ email: String, _ password: String) -> Void)?
+    var onLoginTap: ((_ userModel: UserModel) -> Void)?
 
     
     // MARK: - Properts
@@ -38,6 +38,7 @@ class LoginView: UIView {
         textField.setLeftPaddingPoints(15)
         textField.placeholder = "Endereço de e-mail"
         textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -64,6 +65,7 @@ class LoginView: UIView {
         textField.setLeftPaddingPoints(15)
         textField.placeholder = "Senha"
         textField.keyboardType = .default
+        textField.autocapitalizationType = .none
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -146,7 +148,8 @@ class LoginView: UIView {
     @objc func loginButtonTap() {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
-            self.onLoginTap?(email, password)
+           let userModel = UserModel(email: email, password: password)
+            self.onLoginTap?(userModel)
         }
     }
     

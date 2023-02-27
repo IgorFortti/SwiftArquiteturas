@@ -15,6 +15,7 @@ import UIKit
 protocol LoginDisplayLogic: AnyObject
 {
     func displaySomething(viewModel: Login.Something.ViewModel)
+    func displayError(error: Login.Something.ViewError)
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic
@@ -79,18 +80,41 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     // MARK: Do something
     lazy var loginView: LoginView = {
         let view = LoginView(frame: .zero)
+        view.onLoginTap = {[weak self] userModel in
+            if let self = self {
+                self.loginTap(userModel: userModel)
+            }
+        }
+        view.onRegisterTap = {[weak self] in
+            if let self = self {
+                self.registerTap()
+            }
+        }
         return view
     }()
     //@IBOutlet weak var nameTextField: UITextField!
     
+
     func doSomething()
     {
-        let request = Login.Something.Request()
-        interactor?.doSomething(request: request)
     }
-    
     func displaySomething(viewModel: Login.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
+    }
+    
+    func loginTap(userModel: UserModel) {
+        let request = Login.Something.Request(userModel: userModel)
+        interactor?.doSomething(request: request)
+    }
+    func registerTap() {
+        router?.routeToRegister()
+    }
+    
+    func displayError(error: Login.Something.ViewError) {
+        let errorMessage = error.error.localizedDescription
+        let alert = UIAlertController(title: "Erro", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
 }
