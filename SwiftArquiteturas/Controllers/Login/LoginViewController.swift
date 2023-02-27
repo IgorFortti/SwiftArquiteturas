@@ -8,11 +8,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
     //MARK: - Clousures
     var onRegisterTap: (() -> Void)?
     var onLoginSuccess: (() -> Void)?
-    //MARK: - Properts
     
+    //MARK: - Properts
     lazy var loginView: LoginView = {
         let view = LoginView(frame: .zero)
         view.onRegisterTap = {[weak self] in
@@ -24,7 +25,7 @@ class LoginViewController: UIViewController {
         return view
     }()
     
-    //MARK: OVERRIDES
+    //MARK: - Overrides
     override func loadView() {
         view = loginView
     }
@@ -32,9 +33,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
-        
     }
     
+    // MARK: - Actions
     private func openTap(_ email: String, _ password: String) {
         let userViewModel = UserViewModel()
         userViewModel.getUserFromApi(email, password) {[weak self] result in
@@ -52,7 +53,5 @@ class LoginViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.present(alert, animated: true)
-        
     }
-
 }

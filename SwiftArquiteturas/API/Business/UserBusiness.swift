@@ -24,7 +24,6 @@ class UserBusiness: UserBusinessProtocol {
                 completionHandler(.failure(error))
             }
         }
-        
     }
     
     func register(email: String, password: String, completionHandler: @escaping (Result<UserModel, Error>) -> Void) {

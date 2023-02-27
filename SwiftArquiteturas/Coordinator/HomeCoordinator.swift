@@ -21,6 +21,4 @@ class HomeCoordinator: Coordinator {
     required init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
-    
 }

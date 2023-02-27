@@ -88,7 +88,6 @@ class LoginView: UIView {
         return button
     }()
     
-
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -108,7 +107,6 @@ class LoginView: UIView {
         addSubview(passwordTextField)
         addSubview(openButton)
         addSubview(registerButton)
-        
         
         NSLayoutConstraint.activate([
             emailLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
@@ -138,14 +136,10 @@ class LoginView: UIView {
             registerButton.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor),
             registerButton.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
             registerButton.heightAnchor.constraint(equalToConstant: 40),
-            
         ])
     }
     
-    
-    
     //MARK: - Actions
-    
     @objc func openButtonTap() {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
@@ -156,5 +150,4 @@ class LoginView: UIView {
     @objc func registerButtonTap() {
         self.onRegisterTap?()
     }
-    
 }

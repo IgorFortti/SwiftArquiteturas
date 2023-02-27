@@ -24,7 +24,5 @@ class RegisterCoordinator: Coordinator {
     required init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
-    
 }
 

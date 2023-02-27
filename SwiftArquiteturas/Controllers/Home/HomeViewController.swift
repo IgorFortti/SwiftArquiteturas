@@ -8,11 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    lazy var homeView: HomeView = {
+        let view = HomeView()
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray
+        view = homeView
     }
-
-
 }

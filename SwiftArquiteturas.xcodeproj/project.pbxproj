@@ -24,6 +24,7 @@
 		FABE9E1929A9614B00765466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E1829A9614B00765466 /* HomeViewController.swift */; };
 		FABE9E1B29A9618100765466 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E1A29A9618100765466 /* HomeCoordinator.swift */; };
 		FAC495AF29ACD574002CE14C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC495AE29ACD574002CE14C /* UserViewModel.swift */; };
+		FAC495B129ACF11A002CE14C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC495B029ACF11A002CE14C /* HomeView.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
 		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 		FABE9E1829A9614B00765466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FABE9E1A29A9618100765466 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		FAC495AE29ACD574002CE14C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		FAC495B029ACF11A002CE14C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				FABE9E1829A9614B00765466 /* HomeViewController.swift */,
+				FAC495B029ACF11A002CE14C /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				FABE9E1329A9540D00765466 /* RegisterViewController.swift in Sources */,
 				FAC495AF29ACD574002CE14C /* UserViewModel.swift in Sources */,
 				FABE9E1529A9580900765466 /* RegisterCoordinator.swift in Sources */,
+				FAC495B129ACF11A002CE14C /* HomeView.swift in Sources */,
 				FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */,
 				FABE9E0C29A9370100765466 /* LoginView.swift in Sources */,
 				FA953E2929A7D2430080C863 /* UserBusiness.swift in Sources */,

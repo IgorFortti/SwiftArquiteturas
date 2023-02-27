@@ -124,7 +124,6 @@ class RegisterView: UIView {
         addSubview(confirmPasswordTextField)
         addSubview(registerButton)
         
-        
         NSLayoutConstraint.activate([
             emailLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
             emailLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
@@ -157,14 +156,10 @@ class RegisterView: UIView {
             registerButton.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor),
             registerButton.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor),
             registerButton.heightAnchor.constraint(equalToConstant: 40),
-            
         ])
     }
     
-    
-    
     //MARK: - Actions
-    
     @objc func registerButtonTap() {
         if let email = emailTextField.text,
            let password = passwordTextField.text,
@@ -176,7 +171,6 @@ class RegisterView: UIView {
             }
         }
     }
-    
 }
 
 
