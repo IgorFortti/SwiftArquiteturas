@@ -23,6 +23,7 @@
 		FABE9E1529A9580900765466 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E1429A9580900765466 /* RegisterCoordinator.swift */; };
 		FABE9E1929A9614B00765466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E1829A9614B00765466 /* HomeViewController.swift */; };
 		FABE9E1B29A9618100765466 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE9E1A29A9618100765466 /* HomeCoordinator.swift */; };
+		FAC495AF29ACD574002CE14C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC495AE29ACD574002CE14C /* UserViewModel.swift */; };
 		FAE65A4529A7A61500CA5BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */; };
 		FAE65A4729A7A61500CA5BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */; };
 		FAE65A4929A7A61500CA5BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE65A4829A7A61500CA5BAA /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 		FABE9E1429A9580900765466 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		FABE9E1829A9614B00765466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FABE9E1A29A9618100765466 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		FAC495AE29ACD574002CE14C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		FAE65A4129A7A61500CA5BAA /* SwiftArquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftArquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE65A4429A7A61500CA5BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE65A4629A7A61500CA5BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		FAC495AD29ACD552002CE14C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAC495AE29ACD574002CE14C /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FAE65A3829A7A61500CA5BAA = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		FAE65A4329A7A61500CA5BAA /* SwiftArquiteturas */ = {
 			isa = PBXGroup;
 			children = (
+				FAC495AD29ACD552002CE14C /* ViewModel */,
 				FABE9E0729A9324500765466 /* Controllers */,
 				FAE65A6329A7AF3A00CA5BAA /* Source */,
 				FAE65A5D29A7AEE600CA5BAA /* API */,
@@ -440,6 +451,7 @@
 				FAE65A6B29A7B64200CA5BAA /* Constants.swift in Sources */,
 				FABE9E0E29A9469000765466 /* UITextField+.swift in Sources */,
 				FABE9E1329A9540D00765466 /* RegisterViewController.swift in Sources */,
+				FAC495AF29ACD574002CE14C /* UserViewModel.swift in Sources */,
 				FABE9E1529A9580900765466 /* RegisterCoordinator.swift in Sources */,
 				FA953E2B29A7D7BE0080C863 /* UserManager.swift in Sources */,
 				FABE9E0C29A9370100765466 /* LoginView.swift in Sources */,

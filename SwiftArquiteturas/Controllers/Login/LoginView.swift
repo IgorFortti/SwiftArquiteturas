@@ -150,8 +150,6 @@ class LoginView: UIView {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
             self.onOpenTap?(email, password)
-        } else {
-            //Informar que algum campo está vazio
         }
     }
     

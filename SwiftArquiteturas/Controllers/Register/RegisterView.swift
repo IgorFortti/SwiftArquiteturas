@@ -9,6 +9,9 @@ import UIKit
 
 class RegisterView: UIView {
     
+    // MARK: - Clousers
+    var onRegisterTap: ((_ email: String, _ password: String) -> Void)?
+    
     // MARK: - Properts
     lazy var emailLabel: UILabel = {
         let label = UILabel()
@@ -100,12 +103,6 @@ class RegisterView: UIView {
         return button
     }()
     
-    @objc func registerButtonTap() {
-        
-    }
-    
-
-
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -167,6 +164,18 @@ class RegisterView: UIView {
     
     
     //MARK: - Actions
+    
+    @objc func registerButtonTap() {
+        if let email = emailTextField.text,
+           let password = passwordTextField.text,
+           let confirmPassword = confirmPasswordTextField.text {
+            if confirmPassword == password {
+                self.onRegisterTap?(email, password)
+            } else {
+                print("Senhas diferentes")
+            }
+        }
+    }
     
 }
 

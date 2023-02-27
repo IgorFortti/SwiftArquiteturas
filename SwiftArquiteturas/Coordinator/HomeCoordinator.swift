@@ -14,7 +14,8 @@ class HomeCoordinator: Coordinator {
     
     func start() {
         let viewController = HomeViewController()
-        self.navigationController.pushViewController(viewController, animated: true)
+        viewController.modalPresentationStyle = .fullScreen
+        self.navigationController.present(viewController, animated: true)
     }
     
     required init(navigationController: UINavigationController) {
