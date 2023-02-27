@@ -31,7 +31,7 @@ class RegisterRouter: NSObject, RegisterRoutingLogic, RegisterDataPassing
     
     func routeToHome() {
         let destinationVC = HomeViewController()
-        navigateToPush(source: viewController ?? RegisterViewController(), destination: destinationVC)
+        navigateToModal(source: viewController ?? RegisterViewController(), destination: destinationVC)
     }
   
   //func routeToSomewhere(segue: UIStoryboardSegue?)
@@ -63,8 +63,9 @@ class RegisterRouter: NSObject, RegisterRoutingLogic, RegisterDataPassing
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: RegisterDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+  func navigateToModal(source: RegisterViewController, destination: UIViewController)
+    {
+        destination.modalPresentationStyle = .fullScreen
+        source.navigationController?.present(destination, animated: true)
+    }
 }

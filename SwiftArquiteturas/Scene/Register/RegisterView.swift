@@ -85,8 +85,8 @@ class RegisterView: UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.black.cgColor
-        textField.backgroundColor = .systemGray5
-        textField.textColor = .systemGray2
+        textField.backgroundColor = .lightText
+        textField.textColor = .black
         textField.setLeftPaddingPoints(15)
         textField.placeholder = "Redigite sua Senha"
         textField.keyboardType = .default

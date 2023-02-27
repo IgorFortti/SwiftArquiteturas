@@ -75,7 +75,6 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic
     {
         super.viewDidLoad()
         title = "Registro"
-        doSomething()
     }
     
     // MARK: Do something
@@ -92,9 +91,7 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic
         return view
     }()
     
-    func doSomething()
-    {
-    }
+    
     func displaySomething(viewModel: Register.Something.ViewModel)
     {
         router?.routeToHome()
@@ -103,6 +100,7 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic
     func registerTap(userModel: UserModel) {
         let request = Register.Something.Request(userModel: userModel)
         interactor?.doSomething(request: request)
+        
     }
     
     func displayError(error: Register.Something.ViewError) {
