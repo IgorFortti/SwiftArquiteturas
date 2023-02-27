@@ -33,9 +33,17 @@ class RegisterInteractor: RegisterBusinessLogic, RegisterDataStore
   func doSomething(request: Register.Something.Request)
   {
     worker = RegisterWorker()
-    worker?.doSomeWork()
-    
-    let response = Register.Something.Response()
-    presenter?.presentSomething(response: response)
+    worker?.registerUser(userModel: request.userModel, successHandler: {[weak self] userModel in
+        if let self = self {
+            let response = Register.Something.Response(userModel: userModel ?? UserModel())
+            self.presenter?.presentSomething(response: response)
+        }
+    }, failureHandler: {[weak self] error in
+        if let self = self,
+           let error = error {
+            let viewError = Register.Something.ViewError(error: error)
+            self.presenter?.presentError(error: viewError)
+        }
+    })
   }
 }

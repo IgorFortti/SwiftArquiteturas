@@ -15,6 +15,7 @@ import UIKit
 protocol RegisterDisplayLogic: AnyObject
 {
     func displaySomething(viewModel: Register.Something.ViewModel)
+    func displayError(error: Register.Something.ViewError)
 }
 
 class RegisterViewController: UIViewController, RegisterDisplayLogic
@@ -66,10 +67,14 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic
     
     // MARK: View lifecycle
     
+    override func loadView() {
+        view = registerView
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        title = "Registro"
         doSomething()
     }
     
@@ -77,14 +82,35 @@ class RegisterViewController: UIViewController, RegisterDisplayLogic
     
     //@IBOutlet weak var nameTextField: UITextField!
     
+    lazy var registerView: RegisterView = {
+        let view = RegisterView()
+        view.onRegisterTap = {[weak self] userModel in
+            if let self = self {
+                self.registerTap(userModel: userModel)
+            }
+        }
+        return view
+    }()
+    
     func doSomething()
     {
-        let request = Register.Something.Request()
+    }
+    func displaySomething(viewModel: Register.Something.ViewModel)
+    {
+        router?.routeToHome()
+    }
+    
+    func registerTap(userModel: UserModel) {
+        let request = Register.Something.Request(userModel: userModel)
         interactor?.doSomething(request: request)
     }
     
-    func displaySomething(viewModel: Register.Something.ViewModel)
-    {
-        //nameTextField.text = viewModel.name
+    func displayError(error: Register.Something.ViewError) {
+        let errorMessage = error.error.localizedDescription
+        let alert = UIAlertController(title: "Erro", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
+    
+    
 }

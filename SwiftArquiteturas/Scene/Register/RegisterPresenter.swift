@@ -14,18 +14,24 @@ import UIKit
 
 protocol RegisterPresentationLogic
 {
-  func presentSomething(response: Register.Something.Response)
+    func presentSomething(response: Register.Something.Response)
+    func presentError(error: Register.Something.ViewError)
 }
 
 class RegisterPresenter: RegisterPresentationLogic
 {
-  weak var viewController: RegisterDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: Register.Something.Response)
-  {
-    let viewModel = Register.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    weak var viewController: RegisterDisplayLogic?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: Register.Something.Response)
+    {
+        let viewModel = Register.Something.ViewModel(userModel: response.userModel)
+        viewController?.displaySomething(viewModel: viewModel)
+    }
+    
+    func presentError(error: Register.Something.ViewError) {
+        let viewError = Register.Something.ViewError(error: error)
+        viewController?.displayError(error: viewError)
+    }
 }

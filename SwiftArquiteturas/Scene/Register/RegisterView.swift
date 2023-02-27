@@ -10,7 +10,7 @@ import UIKit
 class RegisterView: UIView {
     
     // MARK: - Clousers
-    var onRegisterTap: ((_ email: String, _ password: String) -> Void)?
+    var onRegisterTap: ((_ userModel: UserModel) -> Void)?
     
     // MARK: - Properts
     lazy var emailLabel: UILabel = {
@@ -31,11 +31,12 @@ class RegisterView: UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.black.cgColor
-        textField.backgroundColor = .systemGray5
-        textField.textColor = .systemGray2
+        textField.backgroundColor = .lightText
+        textField.textColor = .black
         textField.setLeftPaddingPoints(15)
         textField.placeholder = "Endereço de e-mail"
         textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -57,8 +58,8 @@ class RegisterView: UIView {
         textField.layer.cornerRadius = 5
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.black.cgColor
-        textField.backgroundColor = .systemGray5
-        textField.textColor = .systemGray2
+        textField.backgroundColor = .lightText
+        textField.textColor = .black
         textField.setLeftPaddingPoints(15)
         textField.placeholder = "Senha"
         textField.keyboardType = .default
@@ -165,7 +166,8 @@ class RegisterView: UIView {
            let password = passwordTextField.text,
            let confirmPassword = confirmPasswordTextField.text {
             if confirmPassword == password {
-                self.onRegisterTap?(email, password)
+                let userModel = UserModel(email: email, password: password)
+                self.onRegisterTap?(userModel)
             } else {
                 print("Senhas diferentes")
             }

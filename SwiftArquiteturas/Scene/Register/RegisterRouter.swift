@@ -14,7 +14,7 @@ import UIKit
 
 @objc protocol RegisterRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func routeToHome()
 }
 
 protocol RegisterDataPassing
@@ -28,6 +28,11 @@ class RegisterRouter: NSObject, RegisterRoutingLogic, RegisterDataPassing
   var dataStore: RegisterDataStore?
   
   // MARK: Routing
+    
+    func routeToHome() {
+        let destinationVC = HomeViewController()
+        navigateToPush(source: viewController ?? RegisterViewController(), destination: destinationVC)
+    }
   
   //func routeToSomewhere(segue: UIStoryboardSegue?)
   //{
@@ -45,6 +50,11 @@ class RegisterRouter: NSObject, RegisterRoutingLogic, RegisterDataPassing
   //}
 
   // MARK: Navigation
+    func navigateToPush(source: RegisterViewController, destination: UIViewController)
+    {
+        destination.modalPresentationStyle = .fullScreen
+        source.navigationController?.pushViewController(destination, animated: true)
+    }
   
   //func navigateToSomewhere(source: RegisterViewController, destination: SomewhereViewController)
   //{
